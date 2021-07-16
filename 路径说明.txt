@@ -1,0 +1,5 @@
+https://cdn.jsdelivr.net/gh/3606655/soft/文件路径
+
+
+如下：
+https://cdn.jsdelivr.net/gh/3606655/soft/upload/softku-logo.png
