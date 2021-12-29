@@ -1,0 +1,374 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<title>Git的下载安装及配置</title>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/static/style/css.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>(function(){var a=document.documentElement.clientWidth||document.body.clientWidth;if(a>460){a=460}else{if(a<320){a=320}}document.documentElement.style.fontSize=(a/26.5)*1+"px"})();</script>
+<!-- js -->
+<script src="https://cdn.jsdelivr.net/gh/fahuo/upload/js/jquery/jquery-2.0.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fahuo/upload/js/jquery/jquery.lazyload-1.9.1.js"></script>
+<script type="text/javascript">
+  $(function() {
+      $("img.dplazy").lazyload({
+      	placeholder : "https://cdn.jsdelivr.net/gh/fahuo/upload/img/public/lazygray.png",
+      	effect: "fadeIn",
+      	threshold: 1500
+      });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- 公共头部 -->
+<div class="all_head">
+  <div class="all_head_box">
+    <div class="head_logo">
+      <a href="/">软件宝库</a>
+    </div>
+
+    <input type="checkbox" id="navSwitch">
+    <div class="tips_nav">
+        <ul class="tipsnav_wrap">
+          <li><a href="/"><i class="fa fa-home"></i><span>首页</span></a></li>
+          <li class="cur"><a href="/win/"><i class="fa fa-windows"></i><span>Win软件</span></a></li>
+          <li><a href="/mac/"><i class="fa fa-apple"></i><span>Mac软件</span></a></li>
+          <li><a href="/android/"><i class="fa fa-android"></i><span>安卓软件</span></a></li>
+          <li><a href="/ios/"><i class="fa fa-apple"></i><span>iOS</span></a></li>
+          <li><a href="/tongyong/"><i class="fa fa-asterisk"></i><span>通用软件</span></a></li>
+          <li><a href="/heji/"><i class="fa fa-cube"></i><span>软件合集</span></a></li>
+          <li><a href="/search/"><i class="fa fa-search"></i><span>软件搜索</span></a></li>
+        </ul>
+    </div>
+
+    <div class="m_header">
+        <label for="navSwitch" href="javascript:;" class="t_nav"><i class="i_bread"><span></span></i></label>
+    </div>
+  </div>
+</div>
+<div class="header_placeholder"></div>
+
+<!-- 主体板块 -->
+<div class="note_body">
+
+  <!-- 面包屑 -->
+  <div class="crumbs_plane_body">
+    <i class="fa fa-home"></i><span><a href='http://soft.qhaha.com/'>主页</a> > <a href='/win/'>Win软件</a> > <a href='/win/tool/'>工具</a> > </span>
+  </div>
+
+  <div class="post_main">
+
+    <div class="post_main_left">
+      <h1>Git的下载安装及配置</h1>
+      <!-- Article Info -->
+      <div class="post_info">
+        <i class="fa fa-user"></i> <span>kk6688</span>
+        <span class="dot">•</span>
+        <i class="fa fa-clock-o"></i> <span>2021-12-28</span>
+      </div>
+
+      <div class="post_content_post">
+        <p>
+	Git是一个免费开源的分布式版本控制器。</p>
+<p>
+	<strong>1、Git的下载与安装</strong></p>
+<p>
+	官方下载：<a href="https://git-scm.com/download/" rel="noopener noreferrer nofollow" target="_blank">https://git-scm.com/download/</a></p>
+<p>
+	根据系统需求下载相应的Git版本，如果出现服务器连接失败或下载失败，可以用本站储存到网盘中的链接进行下载。</p>
+<!-- <p><strong>2、Git安装</strong></p> --><br />
+<p>
+	按照安装向导来安装Git，相关参数勾选为默认，一直下一步，直到安装完成即可。</p>
+<p>
+	安装完成之后，鼠标右键会出现Git的选项。</p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_01.png" /></p>
+<br />
+<p>
+	<strong>2、检测Git是否安装成功</strong></p>
+<p>
+	运行CMD</p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_cmd.png" /></p>
+<p>
+	进入命令行，运行 <span style="color:red;">git</span> 命令</p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_02.png" /></p>
+<p>
+	出现以上结果表示git安装成功</p>
+<br />
+<p>
+	<strong>3、Git与Github相联系</strong></p>
+<p>
+	Git是一个分布式版本控制系统，而Github是一个集成了git的服务，它可以以网页或者客户端的形式，帮助用户把git本地的数据提交到远程的服务器里。</p>
+<p>
+	<strong>配置Github用户名和邮箱</strong></p>
+<p>
+	打开Git bash，配置Github用户名和账号（需要先注册好Github账号）</p>
+<div style="background:#eeeeee;padding:10px;font-family: Menlo,Monaco,Consolas,Andale Mono,lucida console,Courier New,monospace;">
+	<p style="color:red;line-height:16px;margin:4px 0px;">
+		# 配置用户名</p>
+	<p style="line-height:16px;margin:4px 0px;">
+		git config --global user.<span style="color:blue;">name</span> <span style="color:red;">&quot;username&quot;</span> <span style="color:#999;">//（ &quot;username&quot;是自己的账户名）</span></p>
+	<p style="color:red;line-height:16px;margin:10px 0px 4px;">
+		# 配置邮箱</p>
+	<p style="line-height:16px;margin:4px 0px;">
+		git config --global user.<span style="color:blue;">email </span> <span style="color:red;">&quot;username@email.com&quot;</span> <span style="color:#999;">//（ &quot;username@email.com&quot;注册账号时用的邮箱）</span></p>
+</div>
+<p>
+	配置完成后输入</p>
+<div style="background:#eeeeee;padding:10px;font-family: Menlo,Monaco,Consolas,Andale Mono,lucida console,Courier New,monospace;">
+	<p style="line-height:16px;margin:4px 0px;">
+		git config --global --list</p>
+</div>
+<p>
+	来查看配置的结果</p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_03.png" /></p>
+<p>
+	<strong>生成SSH</strong></p>
+<p>
+	在CMD命令行输入以下指令并运行，后面连续敲三次回车，生成的ssh文件位置参照命令提示，默认是系统的用户文件夹</p>
+<div style="background:#eeeeee;padding:10px;font-family: Menlo,Monaco,Consolas,Andale Mono,lucida console,Courier New,monospace;">
+	<p style="line-height:16px;margin:4px 0px;">
+		ssh-keygen -t rsa</p>
+</div>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_04.png" /></p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_05.png" /></p>
+<p>
+	<strong>将公钥添加到Github管理平台</strong></p>
+<p>
+	将ssh文件夹中的公钥（ id_rsa.pub）添加到GitHub管理平台中，在GitHub的个人账户的设置中找到如下界面</p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_06.png" /></p>
+<p>
+	Title随意，将id_rsa.pub文件用文本编辑器打开，复制全部粘贴到key中，然后添加SSH公钥，添加成功如下所示</p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_07.png" /></p>
+<p>
+	<strong>测试配置是否成功</strong></p>
+<p>
+	在Git Bash中输入</p>
+<div style="background:#eeeeee;padding:10px;font-family: Menlo,Monaco,Consolas,Andale Mono,lucida console,Courier New,monospace;">
+	<p style="line-height:16px;margin:4px 0px;">
+		ssh -T git@github.com</p>
+</div>
+<p>
+	<strong>SSH警告</strong></p>
+<p>
+	当你第一次使用Git的命令连接GitHub时，会得到一个警告：</p>
+<div style="background:#eeeeee;padding:10px;font-family: Menlo,Monaco,Consolas,Andale Mono,lucida console,Courier New,monospace;">
+	<p style="line-height:16px;margin:4px 0px;">
+		The authenticity of host &#39;github.com (xx.xx.xx.xx)&#39; can&#39;t be established. RSA key fingerprint is xx.xx.xx.xx.xx. Are you sure you want to continue connecting (yes/no)?</p>
+</div>
+<p>
+	这是因为Git使用SSH连接，而SSH连接在第一次验证GitHub服务器的Key时，需要你确认GitHub的Key的指纹信息是否真的来自GitHub的服务器，输入 <span style="color:red;">yes</span> 回车即可。</p>
+<p>
+	Git会输出一个警告，告诉你已经把GitHub的Key添加到本机的一个信任列表里了：</p>
+<div style="background:#eeeeee;padding:10px;font-family: Menlo,Monaco,Consolas,Andale Mono,lucida console,Courier New,monospace;">
+	<p style="line-height:16px;margin:4px 0px;">
+		Warning: Permanently added &#39;github.com&#39; (RSA) to the list of known hosts.</p>
+</div>
+<p>
+	这个警告只会出现一次，后面的操作就不会有任何警告了。</p>
+<p>
+	如果你实在担心有人冒充GitHub服务器，输入yes前可以对照GitHub的RSA Key的指纹信息是否与SSH连接给出的一致。</p>
+<p>
+	出现以下结果表示配置成功</p>
+<p>
+	<img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/aimg/git_08.png" /></p>
+<p>
+	以上是自己刚开始配置Git的一些记录，对Git的理解和使用很片面，后期会根据自己的学习总结进行更新</p>
+
+      </div>
+
+      <!-- CopyInfo -->
+      <div class="start_plane" id="downlink_add"><i class="fa fa-star"></i> <span>by: 软件宝库</span></div>
+
+      <div class="download_plane">
+        <!-- 百度网盘下载链接 -->
+		<div class="download_link bdwp_on">
+          <h2>下载链接</h2>
+          <div class="down_show">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/bdwp.svg"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="https://pan.baidu.com/s/1OgszIwK8x-vkGmI-3NTwMA" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：百度网盘 | 提取码：srux</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="https://pan.baidu.com/s/1OgszIwK8x-vkGmI-3NTwMA" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+        </div>
+
+		<!-- 不限速下载链接 -->
+		<div class="download_link down_bxs_on">
+          <h3>不限速下载链接</h3>
+
+          <!-- 超星直链 -->
+          <div class="down_show xzbxs_chaoxing_kg_off">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/chaoxing_logo.png"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：超星直链</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+          <!-- 小太阳云储存 -->
+          <div class="down_show xzbxs_xiaoty_kg_off">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/xiaotaiyang_logo.png"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：小太阳云存储</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+          <!-- 奶牛快传 -->
+          <div class="down_show xzbxs_nainiu_kg_off">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/nainiu_logo.png"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：奶牛快传</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+          <!-- 蓝奏云 -->
+          <div class="down_show xzbxs_lanzou_kg_on">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/lanzou_logo.png"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="https://wwi.lanzouw.com/ijvG6y1bj9e" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：蓝奏云</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="https://wwi.lanzouw.com/ijvG6y1bj9e" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+          <!-- 老狗盘 -->
+          <div class="down_show xzbxs_laogou_kg_off">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/laogou_logo.svg"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：老狗盘</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+          <!-- 阿里云盘 -->
+          <div class="down_show xzbxs_aliyunpan_kg_off">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/aliyunpan_logo.png"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：阿里云盘</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+          <!-- 闪电盘 -->
+          <div class="down_show xzbxs_sdpan_kg_on">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/shandianpan_logo.png"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="http://shandianpan.com/f/AA16" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：闪电盘</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="http://shandianpan.com/f/AA16" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+          <!-- 迅雷云盘 -->
+          <div class="down_show xzbxs_xunlei_kg_off">
+            <dl>
+              <dd><img class="dplazy" data-original="https://cdn.jsdelivr.net/gh/3606655/soft/upload/downlogo/xunlei_logo.png"></dd>
+              <dt>
+                <p class="downbtn_text_title"><a href="" target="_blank" rel="noopener noreferrer nofollow">资源文件下载</a></p>
+                <p class="downbtn_text_pwd">来源：迅雷云盘| 提取码：xxxx</p>
+              </dt>
+            </dl>
+            <div class="downbtn_alink"> 
+              <a href="" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-cloud-download"></i> <span>立即下载</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="post_copyright">
+		 免责声明：
+本站非盈利性站点，所有资源仅供学习参考，并不贩卖软件不存在任何商业目的及用途，如果您访问和下载此文件，表示您同意只将此文件用于参考、学习而非其他用途。
+本站所发布的一切软件资源均来自于互联网仅限用于学习和研究目的；不得将上述内容用于商业或者非法用途，否则一切后果请用户自负；本站所有软件信息来自网络，版权争议与本站无关；您必须在下载后的24个小时之内从您的电脑中彻底删除上述内容，如果您喜欢该程序，请支持正版软件，购买注册，得到更好的正版服务；
+如有侵权请邮件与我们联系处理，我们会及时处理，
+邮箱：kk6688#qq.com（#换成@）
+	  </div>
+
+    </div>
+
+    <!-- 右侧 -->
+    <div class="post_main_right">
+      <div class="down_add">
+        <a href="#downlink_add">软件下载地址</a>
+      </div>
+      <dl class="art_tag">
+        <dt><i class="fa fa-tag"></i> 标签：</dt>
+        <dd>
+          <a href='/tags.php?/Git/'>Git</a> 
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+  
+
+</div>
+
+
+<!-- 公共底部 -->
+<div class="footer_plane">
+  <div class="footer_container">
+    Copyright © 2021 ( <span class="yuming"><script language="javascript">
+    host=document.domain;
+    document.write(host)
+    </script></span> ) <span class="pozhehao">-</span>
+    <br><span class="foot_domain">Powered by 软件宝库</span>
+  </div>
+</div>
+
+
+</body>
+</html>
